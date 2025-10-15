@@ -36,7 +36,7 @@ export default function Home() {
           />
           <ol>
             <li>
-              <code> Chashak Players Registry </code>.
+              <code> Chashak Players Registry - Hello </code>.
             </li>
             <li>
               Get started by editing <code>src/pages/index.js</code>.
