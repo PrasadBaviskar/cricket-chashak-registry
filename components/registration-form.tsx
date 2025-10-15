@@ -5,6 +5,7 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 import { Input } from "@/components/ui/input"
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
+import moment from "moment";
 
 type FormValues = {
   fullName: string
@@ -12,6 +13,7 @@ type FormValues = {
   mobile: string
   email: string
   chashak: string
+  dateAndTime: string
 }
 
 const CHASHAK_OPTIONS = ["Maratha Chashak 2025"]
@@ -32,6 +34,7 @@ export function RegistrationForm() {
       mobile: "",
       email: "",
       chashak: CHASHAK_OPTIONS[0],
+      dateAndTime: moment().format('MMMM Do YYYY, h:mm:ss a')
     },
     mode: "onTouched",
   })
